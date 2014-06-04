@@ -1,0 +1,34 @@
+//
+//  IR_ProcedureTests.m
+//  IR ProcedureTests
+//
+//  Created by Yasuyuki Pham on 6/4/14.
+//  Copyright (c) 2014 butt. All rights reserved.
+//
+
+#import <XCTest/XCTest.h>
+
+@interface IR_ProcedureTests : XCTestCase
+
+@end
+
+@implementation IR_ProcedureTests
+
+- (void)setUp
+{
+    [super setUp];
+    // Put setup code here. This method is called before the invocation of each test method in the class.
+}
+
+- (void)tearDown
+{
+    // Put teardown code here. This method is called after the invocation of each test method in the class.
+    [super tearDown];
+}
+
+- (void)testExample
+{
+    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+}
+
+@end
