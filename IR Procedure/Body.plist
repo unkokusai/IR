@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<dict>
+			<key>Procedure</key>
+			<string>portacath</string>
+            <key>Category</key>
+            <string>1</string>
+            <key>Description</key>
+            <string>Tunneled portacath placement</string>
+            <key>Planning</key>
+            <string>NPO, No asprin</string>
+            <key>Indication</key>
+            <string>Chemotherapy</string>
+            <key>Alternate</key>
+            <string>Central Tunneled Catheter</string>
+            <key>Complication</key>
+            <string>Bleeding, Infection</string>
+            <key>Postprocedure</key>
+            <string>Tenderness at incission site</string>
+		</dict>
+		<dict>
+			<key>Procedure</key>
+			<string>eat butt</string>
+            <key>Category</key>
+            <string>1</string>
+            <key>Description</key>
+            <string>eating butt is an artt</string>
+            <key>Planning</key>
+            <string>NPO, No asprin</string>
+            <key>Indication</key>
+            <string>butt cravings</string>
+            <key>Alternate</key>
+            <string>Central butt Catheter</string>
+            <key>Complication</key>
+            <string>Bleeding, Infection, herpes</string>
+            <key>Postprocedure</key>
+            <string>Tenderness at incission site</string>
+		</dict>
+		<dict>
+			<key>Procedure</key>
+			<string>pee all over</string>
+            <key>Category</key>
+            <string>1</string>
+            <key>Description</key>
+            <string>Tunneled fuck butt placement</string>
+            <key>Planning</key>
+            <string>NPO, No asprin</string>
+            <key>Indication</key>
+            <string>severe pee cravings</string>
+            <key>Alternate</key>
+            <string>Central peepepepeppepepe Catheter</string>
+            <key>Complication</key>
+            <string>HEHEHEHHEHEE, Infection</string>
+            <key>Postprocedure</key>
+            <string>Tenderness at incission site</string>
+		</dict>
+	</array>
+	<array>
+        <dict>
+            <key>Procedure</key>
+			<string>Biliostomy Tube</string>
+			<key>Category</key>
+			<string>2</string>
+			<key>Description</key>
+			<string>Percutaneous biliary drain placement</string>
+			<key>Planning</key>
+			<string>NPO, No anticoagulation</string>
+			<key>Indication</key>
+			<string>Biliary obstruciton</string>
+			<key>Alternate</key>
+			<string>Endoscopic decompression by GI, Surgical</string>
+			<key>Complication</key>
+			<string>Biliary Leak, Hemorrhage, Infection, Sepsis</string>
+			<key>Postprocedure</key>
+			<string>Pain at incission site</string>
+		</dict>
+	</array>
+	<array>
+        <dict>
+            <key>Procedure</key>
+			<string>Fenestration for Dissection</string>
+			<key>Category</key>
+			<string>3</string>
+			<key>Description</key>
+			<string>Fenestration of dissection flap</string>
+			<key>Planning</key>
+			<string>NPO, No anticoagulation, consult cardiovascular surgery, hold blood prodecuts</string>
+			<key>Indication</key>
+			<string>dissection requiring fenestration of dissection flap for expanding false lumen</string>
+			<key>Alternate</key>
+			<string>consult cardiovascular surgery for further recommendations</string>
+			<key>Complication</key>
+			<string>hemorrhage, nontarget fenestration of involved artery</string>
+			<key>Postprocedure</key>
+			<string>hypotension from inadvertent arterial injury, failed fenestration with end organ injury</string>
+		</dict>
+	</array>
+</array>
+</plist>

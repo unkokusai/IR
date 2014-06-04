@@ -14,13 +14,16 @@
 		2511285D193F1B74004B5224 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2511285C193F1B74004B5224 /* main.m */; };
 		25112861193F1B74004B5224 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25112860193F1B74004B5224 /* AppDelegate.m */; };
 		25112864193F1B74004B5224 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25112862193F1B74004B5224 /* Main.storyboard */; };
-		25112867193F1B74004B5224 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25112866193F1B74004B5224 /* ViewController.m */; };
 		25112869193F1B74004B5224 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25112868193F1B74004B5224 /* Images.xcassets */; };
 		25112870193F1B74004B5224 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2511286F193F1B74004B5224 /* XCTest.framework */; };
 		25112871193F1B74004B5224 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25112850193F1B74004B5224 /* Foundation.framework */; };
 		25112872193F1B74004B5224 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25112854193F1B74004B5224 /* UIKit.framework */; };
 		2511287A193F1B74004B5224 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25112878193F1B74004B5224 /* InfoPlist.strings */; };
 		2511287C193F1B74004B5224 /* IR_ProcedureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2511287B193F1B74004B5224 /* IR_ProcedureTests.m */; };
+		25112887193F1BF6004B5224 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25112886193F1BF6004B5224 /* RootViewController.m */; };
+		25112889193F206E004B5224 /* Body.plist in Resources */ = {isa = PBXBuildFile; fileRef = 25112888193F206E004B5224 /* Body.plist */; };
+		2511288C193F2B0E004B5224 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2511288B193F2B0E004B5224 /* DetailViewController.m */; };
+		2511288F193F2D92004B5224 /* ProcedureListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2511288E193F2D92004B5224 /* ProcedureListTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +48,19 @@
 		2511285F193F1B74004B5224 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		25112860193F1B74004B5224 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		25112863193F1B74004B5224 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		25112865193F1B74004B5224 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		25112866193F1B74004B5224 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		25112868193F1B74004B5224 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2511286E193F1B74004B5224 /* IR ProcedureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IR ProcedureTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2511286F193F1B74004B5224 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		25112877193F1B74004B5224 /* IR ProcedureTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IR ProcedureTests-Info.plist"; sourceTree = "<group>"; };
 		25112879193F1B74004B5224 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2511287B193F1B74004B5224 /* IR_ProcedureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IR_ProcedureTests.m; sourceTree = "<group>"; };
+		25112885193F1BF6004B5224 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		25112886193F1BF6004B5224 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		25112888193F206E004B5224 /* Body.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Body.plist; sourceTree = "<group>"; };
+		2511288A193F2B0E004B5224 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		2511288B193F2B0E004B5224 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		2511288D193F2D92004B5224 /* ProcedureListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcedureListTableViewController.h; sourceTree = "<group>"; };
+		2511288E193F2D92004B5224 /* ProcedureListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcedureListTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +123,12 @@
 				2511285F193F1B74004B5224 /* AppDelegate.h */,
 				25112860193F1B74004B5224 /* AppDelegate.m */,
 				25112862193F1B74004B5224 /* Main.storyboard */,
-				25112865193F1B74004B5224 /* ViewController.h */,
-				25112866193F1B74004B5224 /* ViewController.m */,
+				25112885193F1BF6004B5224 /* RootViewController.h */,
+				25112886193F1BF6004B5224 /* RootViewController.m */,
+				2511288A193F2B0E004B5224 /* DetailViewController.h */,
+				2511288B193F2B0E004B5224 /* DetailViewController.m */,
+				2511288D193F2D92004B5224 /* ProcedureListTableViewController.h */,
+				2511288E193F2D92004B5224 /* ProcedureListTableViewController.m */,
 				25112868193F1B74004B5224 /* Images.xcassets */,
 				25112857193F1B74004B5224 /* Supporting Files */,
 			);
@@ -130,6 +142,7 @@
 				25112859193F1B74004B5224 /* InfoPlist.strings */,
 				2511285C193F1B74004B5224 /* main.m */,
 				2511285E193F1B74004B5224 /* IR Procedure-Prefix.pch */,
+				25112888193F206E004B5224 /* Body.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -230,6 +243,7 @@
 			files = (
 				25112869193F1B74004B5224 /* Images.xcassets in Resources */,
 				2511285B193F1B74004B5224 /* InfoPlist.strings in Resources */,
+				25112889193F206E004B5224 /* Body.plist in Resources */,
 				25112864193F1B74004B5224 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,9 +263,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25112867193F1B74004B5224 /* ViewController.m in Sources */,
+				2511288F193F2D92004B5224 /* ProcedureListTableViewController.m in Sources */,
 				25112861193F1B74004B5224 /* AppDelegate.m in Sources */,
 				2511285D193F1B74004B5224 /* main.m in Sources */,
+				25112887193F1BF6004B5224 /* RootViewController.m in Sources */,
+				2511288C193F2B0E004B5224 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
