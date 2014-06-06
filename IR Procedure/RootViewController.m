@@ -9,15 +9,12 @@
 #import "RootViewController.h"
 #import "ProcedureListTableViewController.h"
 
-@interface RootViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface RootViewController () <UITableViewDelegate, UITableViewDataSource, UISearchDisplayDelegate>
 
 @property (strong, nonatomic) NSArray *bodyArray;
 @property (strong, nonatomic) NSArray *neurologyArray;
 
 @property (strong, nonatomic) NSArray *searchResults;
-//@property (strong, nonatomic) UITableView *tableView;
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
-
 
 @end
 
@@ -28,17 +25,6 @@
     if (!_searchResults) _searchResults = [[NSArray alloc] init];
     return _searchResults;
 }
-
-//-(UITableView *)tableView
-//{
-//    if (!_tableView) {
-//        CGRect navigationSize = self.navigationController.navigationBar.bounds;
-//        CGFloat y = navigationSize.size.height;
-//        CGFloat height = self.view.bounds.size.height - y;
-//        CGRectMake(0, y, self.view.bounds.size.width, height);
-//    }
-//    return _tableView;
-//}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -53,10 +39,8 @@
 {
     [super viewDidLoad];
     self.title = @"IR Procedure Guide";
-    self.tableView.hidden = YES;
     //search bar setup
     //    self.searchDisplayController.displaysSearchBarInNavigationBar = YES;
-    
     
     [self populatePropertyList];
 //    self.searchDisplayController
@@ -92,23 +76,41 @@
 
 -(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
 {
+    [self setSearchFrame];
     return  YES;
 }
 
--(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchScope:(NSInteger)searchOption
+
+-(void)searchDisplayController:(UISearchDisplayController *)controller didShowSearchResultsTableView:(UITableView *)tableView
 {
-    return YES;
+    [self setSearchFrame];
 }
+
+-(void)searchDisplayControllerWillBeginSearch:(UISearchDisplayController *)controller
+{
+    [self setSearchFrame];
+}
+
+-(void)searchDisplayControllerWillEndSearch:(UISearchDisplayController *)controller
+{
+    [self setSearchFrame];
+}
+
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 2;
+    return 1;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if (tableView == self.searchDisplayController.searchResultsTableView) NSLog(@"DICK BUTT");
     static NSString *CellIdentifier = @"cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+    }
+    
     
     cell.textLabel.text = @"butt";
     cell.detailTextLabel.text = @"dickbutt";
@@ -154,6 +156,14 @@
     
 }
 
+//search set Frame to avoid overlaying
+-(void)setSearchFrame
+{
+    CGRect searchDisplayerFrame = self.searchDisplayController.searchResultsTableView.frame;
+    searchDisplayerFrame.origin.y = CGRectGetMaxY(self.searchDisplayController.searchBar.frame);
+    searchDisplayerFrame.size.height -= searchDisplayerFrame.origin.y;
+    self.searchDisplayController.searchResultsTableView.superview.frame = searchDisplayerFrame;
+}
 
 
 
