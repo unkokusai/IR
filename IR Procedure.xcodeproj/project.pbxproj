@@ -24,6 +24,7 @@
 		25112889193F206E004B5224 /* Body.plist in Resources */ = {isa = PBXBuildFile; fileRef = 25112888193F206E004B5224 /* Body.plist */; };
 		2511288C193F2B0E004B5224 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2511288B193F2B0E004B5224 /* DetailViewController.m */; };
 		2511288F193F2D92004B5224 /* ProcedureListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2511288E193F2D92004B5224 /* ProcedureListTableViewController.m */; };
+		25D299781941572A0003FC7E /* Neurology.plist in Resources */ = {isa = PBXBuildFile; fileRef = 25D299771941572A0003FC7E /* Neurology.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		2511288B193F2B0E004B5224 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		2511288D193F2D92004B5224 /* ProcedureListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcedureListTableViewController.h; sourceTree = "<group>"; };
 		2511288E193F2D92004B5224 /* ProcedureListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcedureListTableViewController.m; sourceTree = "<group>"; };
+		25D299771941572A0003FC7E /* Neurology.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Neurology.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,10 +127,10 @@
 				25112862193F1B74004B5224 /* Main.storyboard */,
 				25112885193F1BF6004B5224 /* RootViewController.h */,
 				25112886193F1BF6004B5224 /* RootViewController.m */,
-				2511288A193F2B0E004B5224 /* DetailViewController.h */,
-				2511288B193F2B0E004B5224 /* DetailViewController.m */,
 				2511288D193F2D92004B5224 /* ProcedureListTableViewController.h */,
 				2511288E193F2D92004B5224 /* ProcedureListTableViewController.m */,
+				2511288A193F2B0E004B5224 /* DetailViewController.h */,
+				2511288B193F2B0E004B5224 /* DetailViewController.m */,
 				25112868193F1B74004B5224 /* Images.xcassets */,
 				25112857193F1B74004B5224 /* Supporting Files */,
 			);
@@ -143,6 +145,7 @@
 				2511285C193F1B74004B5224 /* main.m */,
 				2511285E193F1B74004B5224 /* IR Procedure-Prefix.pch */,
 				25112888193F206E004B5224 /* Body.plist */,
+				25D299771941572A0003FC7E /* Neurology.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25112869193F1B74004B5224 /* Images.xcassets in Resources */,
+				25D299781941572A0003FC7E /* Neurology.plist in Resources */,
 				2511285B193F1B74004B5224 /* InfoPlist.strings in Resources */,
 				25112889193F206E004B5224 /* Body.plist in Resources */,
 				25112864193F1B74004B5224 /* Main.storyboard in Resources */,
@@ -472,6 +476,7 @@
 				25112881193F1B74004B5224 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		25112882193F1B74004B5224 /* Build configuration list for PBXNativeTarget "IR ProcedureTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +485,7 @@
 				25112884193F1B74004B5224 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

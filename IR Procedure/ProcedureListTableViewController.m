@@ -7,8 +7,11 @@
 //
 
 #import "ProcedureListTableViewController.h"
+#import "DetailViewController.h"
 
 @interface ProcedureListTableViewController ()
+
+@property (strong, nonatomic) NSDictionary *selectedItem;
 
 @end
 
@@ -32,7 +35,7 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    NSLog(@"%@", self.procedureList);
+//    NSLog(@"%@", self.procedureList);
 }
 
 - (void)didReceiveMemoryWarning
@@ -117,15 +120,28 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"toDetailViewFromTable"]) {
+        if ([segue.destinationViewController isKindOfClass:[DetailViewController class]]) {
+            DetailViewController *detailVC = segue.destinationViewController;
+            detailVC.detailItem = self.selectedItem;
+        }
+    }
 }
-*/
+
+#pragma mark - tableView Delegate
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    self.selectedItem = self.procedureList[indexPath.section][indexPath.row];
+    [self performSegueWithIdentifier:@"toDetailViewFromTable" sender:self];
+}
+
+
 
 @end

@@ -10,7 +10,7 @@
 
 @interface DetailViewController ()
 
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollVIew;
+@property (weak, nonatomic) IBOutlet UITextView *detailTextField;
 
 @end
 
@@ -29,7 +29,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.scrollVIew.directionalLockEnabled = YES;
+    NSLog(@"%@", self.detailItem);
+    self.detailTextField.text = [self createText];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -48,5 +50,35 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - Helper Methods
+
+/*
+#define CATEGORY @"Category"
+#define PROCEDURE @"Procedure"
+#define DESCRIPTION @"Description"
+#define INDICATION @"Indication"
+#define PLANNING @"Planning"
+#define POSTPROCEDURE @"Postprocedure"
+#define COMPLICATION @"Complication"
+#define ALTERNATE @"Alternate"
+*/
+
+-(NSString *)createText
+{
+    NSString *category = self.detailItem[CATEGORY];
+    NSString *procedure = self.detailItem[PROCEDURE];
+    NSString *description = self.detailItem[DESCRIPTION];
+    NSString *indication = self.detailItem[INDICATION];
+    NSString *planning = self.detailItem[PLANNING];
+    NSString *postprocedure = self.detailItem[POSTPROCEDURE];
+    NSString *complication = self.detailItem[COMPLICATION];
+    NSString *alternate = self.detailItem[ALTERNATE];
+    
+    NSString *completeText = [NSString stringWithFormat:
+        @"Category: %@\n\nProcedure: %@\n\nDescription: %@\n\nIndication: %@\n\nPreoperative Planning: %@\n\nPostprocedure Expectations: %@\n\nComplication: %@\n\nOther options: %@\n\n", category, procedure, description, indication, planning, postprocedure, complication, alternate];
+    return completeText;
+}
+
 
 @end
